@@ -1,0 +1,13 @@
+{
+  "name": "angular-rickshaw",
+  "version": "0.0.0",
+  "main": "app/scripts/directives/angular-rickshaw.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular": "~1.0.7"
+  }
+}
