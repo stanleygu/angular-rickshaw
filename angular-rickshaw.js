@@ -8,17 +8,23 @@ angular.module('stanley-gu.angular-rickshaw', []).directive('rickshaw', function
             data: '='
         },
         link: function postLink(scope, element, attrs) {
-            var graph = new Rickshaw.Graph({
-                element: element[0],
-                width: attrs.width,
-                height: attrs.height,
-                series: [{
-                    color: 'steelblue',
-                    data: scope.data
-                }]
+            scope.$watch('data', function(newVal, oldVal) {
+              if (!newVal) {
+                return;
+              }
+              element[0].innerHTML = '';
+              var graph = new Rickshaw.Graph({
+                  element: element[0],
+                  width: attrs.width,
+                  height: attrs.height,
+                  series: scope.data,
+                  renderer: 'line'
+              });
+              var hoverDetail = new Rickshaw.Graph.HoverDetail({
+                graph: graph
+              });
+              graph.render();
             });
-
-            graph.render();
         }
     };
 });
