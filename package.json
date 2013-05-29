@@ -1,4 +1,19 @@
 {
   "name": "angular-rickshaw",
-  "version": "0.0.0"
+  "version": "0.1.0",
+  "description": "An angular directive for calling the rickshaw graphing library",
+  "main": "angular-rickshaw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stanley-gu/angular-rickshaw.git"
+  },
+  "keywords": [
+    "angular",
+    "rickshaw"
+  ],
+  "author": "Stanley Gu",
+  "license": "BSD"
 }
