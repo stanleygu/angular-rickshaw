@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('511517App')
+angular.module('angularRickshawApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

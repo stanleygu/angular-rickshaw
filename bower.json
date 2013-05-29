@@ -9,5 +9,8 @@
   ],
   "dependencies": {
     "angular": "~1.0.7"
+  },
+  "devDependencies": {
+    "rickshaw": "~1.2.1"
   }
 }

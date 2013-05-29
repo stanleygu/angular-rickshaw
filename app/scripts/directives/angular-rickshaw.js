@@ -1,12 +1,24 @@
 'use strict';
 
-angular.module('511517App')
-  .directive('rickshaw', function () {
+angular.module('angularRickshawApp').directive('rickshaw', function() {
     return {
-      template: '<div></div>',
-      restrict: 'E',
-      link: function postLink(scope, element) {
-        element.text('this is the rickshaw directive');
-      }
+        template: '<div></div>',
+        restrict: 'E',
+        scope: {
+            data: '='
+        },
+        link: function postLink(scope, element, attrs) {
+            var graph = new Rickshaw.Graph({
+                element: element[0],
+                width: attrs.width,
+                height: attrs.height,
+                series: [{
+                    color: 'steelblue',
+                    data: scope.data
+                }]
+            });
+
+            graph.render();
+        }
     };
-  });
+});

@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('511517App', [])
+angular.module('angularRickshawApp', [])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'DemoCtrl'
       })
       .otherwise({
         redirectTo: '/'
