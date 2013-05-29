@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularRickshawApp').directive('rickshaw', function() {
+angular.module('stanley-gu.angular-rickshaw', []).directive('rickshaw', function() {
     return {
         template: '<div></div>',
         restrict: 'E',
