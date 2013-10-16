@@ -8,7 +8,7 @@
     "components"
   ],
   "dependencies": {
-    "angular": "~1.0.7",
-    "rickshaw": "~1.2.1"
+    "angular": "*",
+    "rickshaw": ">=1.2.1"
   }
 }
